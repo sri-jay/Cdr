@@ -13,7 +13,7 @@ function getDocument()
 {
 	$document_id = $_GET['id'];
 
-	$connection = mysqli_connect("sriduth.db.10434227.hostedresource.com","sriduth","J@yhari2013","sriduth");
+	$connection = mysqli_connect();
 
 	if(mysqli_connect_errno($connection))
 	{
@@ -50,7 +50,7 @@ function storeDocument()
 	$code = stripslashes($code);
 	//$script_code = stripslashes($script_code);
 
-	$connection = mysqli_connect("sriduth.db.10434227.hostedresource.com","sriduth","J@yhari2013","sriduth");
+	$connection = mysqli_connect();
 
 	if(mysqli_connect_errno($connection))
 	{
